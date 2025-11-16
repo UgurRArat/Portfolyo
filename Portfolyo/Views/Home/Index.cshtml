@@ -1,8 +1,70 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Ana Sayfa";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<header class="masthead bg-primary text-white text-center">
+    <div class="container d-flex align-items-center flex-column">
+        <img class="masthead-avatar mb-5" src="~/assets/img/avataaars.svg" alt="..." />
+
+        <h1 class="masthead-heading text-uppercase mb-0">[Uğur Rahman Arat]</h1>
+
+        <div class="divider-custom divider-light">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+
+        <p class="masthead-subheading font-weight-light mb-0">[Bilgisayar Programcılığı 2.Sınıf Öğrencisi]</p>
+    </div>
+</header>
+
+<section class="page-section portfolio" id="portfolio">
+    <div class="container"> </div>
+</section>
+
+<section class="page-section bg-primary text-white mb-0" id="about">
+    <div class="container">
+        <h2 class="page-section-heading text-center text-uppercase text-white">Hakkımda</h2>
+        <div class="divider-custom divider-light">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 ms-auto"><p class="lead"> Kendinizden, C# ve ASP.NET MVC yeteneklerinizden bahsedin.</p></div>
+            <div class="col-lg-4 me-auto"><p class="lead"> Hedeflerinizden ve bu portfolyoyu neden hazırladığınızdan bahsedebilirsiniz.</p></div>
+        </div>
+    </div>
+</section>
+
+<section class="page-section" id="contact">
+    <div class="container">
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">İletişim</h2>
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-xl-7">
+                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="name" type="text" placeholder="Adınız..." />
+                        <label for="name">Ad Soyad</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="email" type="email" placeholder="email@adres.com" />
+                        <label for="email">Email Adresi</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" id="message" type="text" placeholder="Mesajınız..." style="height: 10rem"></textarea>
+                        <label for="message">Mesaj</label>
+                    </div>
+                    <button class="btn btn-primary btn-xl" id="submitButton" type="submit">Gönder</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
